@@ -7,7 +7,7 @@ import {
 
 export default ({history}) => (
   <Router history={history}>
-    <Route path="/" component={RootPage}>
+    <Route path="https://xviterx.github.io/" component={RootPage}>
       <IndexRoute component={IndexPage} />
       <Route path="edit" component={EditPage} />
       <Route path="add" component={AddPage} />
