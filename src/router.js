@@ -17,6 +17,6 @@ export default ({history}) => (
 
 
     </Route>
-    <Route path="*" component={() => <div>404!<br /><a href=>sfsdfsdfsd home</a></div>} />
+    <Route path="*" component={() => <div>404!<br /><a href="https://xviterx.github.io/App/">sfsdfsdfsd home</a></div>} />
   </Router>
 );
