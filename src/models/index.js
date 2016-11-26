@@ -23,6 +23,10 @@ export default {
       const data = yield call(loaddirectories);
       console.log(data)
     },
+    loadPokemon(action, {call,pull}) {
+      const data = yield call(loadPokemon)
+      console.log(data)
+    }
   },
 
   reducers: {
