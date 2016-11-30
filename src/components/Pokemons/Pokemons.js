@@ -9,7 +9,7 @@ class pokemon extends React.Component {
     console.log(this.props);
     return (
       <div>
-        sdfsdfdsf
+        {this.props.pokemonlist.map(({name, url}) => <div>{name},{url}</div>)}
       </div>
     )
   }
