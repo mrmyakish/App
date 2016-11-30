@@ -2,8 +2,8 @@ import 'index.html';
 import 'index.css';
 import { browserHistory } from 'dva/router';
 import dva from 'dva';
-import router from './router';
-import model from './models'
+import router from 'router';
+import model from 'models'
 
 // 1. Initialize
 const app = dva({

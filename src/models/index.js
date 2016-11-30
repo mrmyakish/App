@@ -1,4 +1,4 @@
-import { loaddirectories } from 'services';
+import { loaddirectories, loadPokemon } from 'services';
 import { parse } from 'qs';
 
 export default {
@@ -19,13 +19,11 @@ export default {
   },
 
   effects: {
-    *loaddirectories(action, {call, put}) {
-      const data = yield call(loaddirectories);
-      console.log(data)
-    },
-    loadPokemon(action, {call,pull}) {
-      const data = yield call(loadPokemon)
-      console.log(data)
+    *loadPokemon(action, {call, put}) {
+      console.log('jkhkjhkhkjhkj');
+      const data = yield call(loadPokemon);
+      console.log(data);
+      yield put({type: 'savePokemon', pauload: data});
     }
   },
 
@@ -33,6 +31,11 @@ export default {
     fetchFolders(state, action) {
       return state;
     },
+    savePokemon(state, action) {
+      console.log(action);
+      return state;
+    },
   },
+
 
 }
