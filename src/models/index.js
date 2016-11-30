@@ -6,6 +6,7 @@ export default {
   namespace: 'app',
 
   state: {
+    pokemonlist: [],
     folders: [],
     fields: [1,2,3,4,5],
     mods: [0,4,8,16],
@@ -21,9 +22,9 @@ export default {
   effects: {
     *loadPokemon(action, {call, put}) {
       console.log('jkhkjhkhkjhkj');
-      const data = yield call(loadPokemon);
+      const {data} = yield call(loadPokemon);
       console.log(data);
-      yield put({type: 'savePokemon', pauload: data});
+      yield put({type: 'savePokemon', payload: data});
     }
   },
 
@@ -32,8 +33,10 @@ export default {
       return state;
     },
     savePokemon(state, action) {
-      console.log(action);
-      return state;
+      return {
+        ...state,
+        pokemonlist: action.payload.results
+      }
     },
   },
 

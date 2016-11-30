@@ -5,3 +5,4 @@ export RemovePage from './RemovePage';
 export EditPage from './EditPage';
 export SearchPage from './SearchPage';
 export HomePage from './HomePage';
+export PokemonListPage from './PokemonListPage';

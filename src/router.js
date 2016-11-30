@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import { Router, Route, IndexRoute } from 'dva/router';
 import {
   RootPage, IndexPage, AddPage,
-  RemovePage, EditPage, SearchPage, HomePage
+  RemovePage, EditPage, SearchPage, HomePage, PokemonListPage
 } from 'routes';
 
 export default ({history}) => (
@@ -14,6 +14,8 @@ export default ({history}) => (
       <Route path="remove" component={RemovePage} />
       <Route path="search" component={SearchPage} />
       <Route path="home" component={HomePage} />
+      <Route path="pokemon" component={PokemonListPage} />
+
 
 
     </Route>

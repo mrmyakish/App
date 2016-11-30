@@ -1,1 +1,1 @@
-export FolderTree from './FolderTree';
+export Pokemons from './Pokemons';

@@ -7,8 +7,8 @@ import styles from './IndexPage.css';
 const IndexPage = ({children}) => {
   return (
     <div className={styles.normal}>
-      Index page
-      <FolderTree />
+<a href="/pokemon">PokemonPage</a>
+    <FolderTree />
     </div>
   );
 }
