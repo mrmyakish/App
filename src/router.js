@@ -2,9 +2,9 @@ import React, { PropTypes } from 'react';
 import { Router, Route, IndexRoute } from 'dva/router';
 import {
   RootPage, IndexPage, AddPage,
-  RemovePage, EditPage, SearchPage, HomePage, PokemonListPage
+  RemovePage, EditPage, SearchPage, HomePage, PokemonListPage, PikaPage
 } from 'routes';
-
+console.log(PikaPage);
 export default ({history}) => (
   <Router history={history}>
     <Route path="/" component={RootPage}>
@@ -15,6 +15,8 @@ export default ({history}) => (
       <Route path="search" component={SearchPage} />
       <Route path="home" component={HomePage} />
       <Route path="pokemon" component={PokemonListPage} />
+      <Route path="pika" component={PikaPage} />
+
 
 
 

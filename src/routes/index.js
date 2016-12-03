@@ -6,3 +6,4 @@ export EditPage from './EditPage';
 export SearchPage from './SearchPage';
 export HomePage from './HomePage';
 export PokemonListPage from './PokemonListPage';
+export PikaPage from './PikaPage';
