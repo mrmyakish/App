@@ -1,6 +1,5 @@
 import { loaddirectories, loadPokemon } from 'services';
 import { parse } from 'qs';
-
 export default {
 
   namespace: 'app',

@@ -1,5 +1,12 @@
 .normal {
   font-family: Georgia, sans-serif;
+  border: 1px solid;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  background-color: red;
+  color: white;
+
 }
 .main {
   font-size: 20px;
@@ -7,4 +14,9 @@
 .link {
 text-decoration: none;
 color: red;
+font-size: 32px;
+}
+.button {
+  width: 200px;
+  height: 200px;
 }

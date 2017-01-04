@@ -1,10 +1,10 @@
 import React from 'react';
-import Pika from 'components/Pika';
-
 export default (props) => {
   console.log(props);
   return (
   <div>
-    <h1> is that yoor pokemon? </h1>
+      <h1> Nice choice! </h1>
+      <a href="/"> Try again</a> <br/>
+      <a href="/pokemon">  Go Back</a>
   </div>
 )};

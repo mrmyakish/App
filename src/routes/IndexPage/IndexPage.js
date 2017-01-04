@@ -1,9 +1,5 @@
 import React from 'react';
-
-import FolderTree from 'components/FolderTree';
-
 import styles from './IndexPage.css';
-
 const IndexPage = ({children}) => {
   return (
   <div className={styles.normal}>
@@ -11,8 +7,6 @@ const IndexPage = ({children}) => {
 <button> <a className={styles.link} href="/pokemon">GET POKEMONS</a> </button>
 </div>
 
-
-    <FolderTree />
     </div>
   );
 }
