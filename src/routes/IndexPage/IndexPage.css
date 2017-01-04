@@ -1,3 +1,10 @@
 .normal {
   font-family: Georgia, sans-serif;
 }
+.main {
+  font-size: 20px;
+}
+.link {
+text-decoration: none;
+color: red;
+}
